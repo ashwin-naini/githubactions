@@ -4,7 +4,11 @@ name: Push Workflow
 on:
   workflow_dispatch:
     inputs:
-      - name: select branch
+      branch:
+        description: "select the branch name"
+        required: true 
+        default: "feature/ash"
+        type: string
   push:
     branches: [main]
 
