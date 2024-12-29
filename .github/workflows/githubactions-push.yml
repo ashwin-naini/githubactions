@@ -6,7 +6,7 @@ on:
     inputs:
       branch:
         description: "select the branch name"
-        required: true 
+        required: false
         default: "main"
         type: string
   push:
