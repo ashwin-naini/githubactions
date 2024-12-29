@@ -2,8 +2,11 @@ name: Push Workflow
 
 # Trigger on push to the main or develop branches
 on:
+  workflow_dispatch:
+    inputs:
+      - name: select branch
   push:
-    branches:[main]
+    branches: [main]
 
 jobs:
   print-info:
