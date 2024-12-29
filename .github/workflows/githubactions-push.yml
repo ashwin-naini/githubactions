@@ -1,0 +1,21 @@
+name: Push Workflow
+
+# Trigger on push to the main or develop branches
+on:
+  push:
+    branches:[main]
+
+jobs:
+  print-info:
+    # Define the operating system for the runner
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Push Information
+        run: |
+          # Print the branch name where the push occurred
+          echo "Branch Name: ${{ github.ref_name }}"
+          # Print the commit message of the last commit
+          echo "Commit Message: ${{ github.event.head_commit.message }}"
+          # printh the actor name
+          echo "github username: ${{github.actor}}"
