@@ -3,7 +3,8 @@ name: Push Workflow
 # Trigger on push to the main or develop branches
 on:
   push:
-    branches:[main]
+    branches:
+      - main
 
 jobs:
   print-info:
