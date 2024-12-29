@@ -6,8 +6,8 @@ on:
     inputs:
       branch:
         description: "select the branch name"
-        required: true 
-        default: "feature/ash"
+        required: true
+        default: " "
         type: string
   push:
     branches: [main]
