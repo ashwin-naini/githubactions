@@ -2,9 +2,15 @@ name: Push Workflow
 
 # Trigger on push to the main or develop branches
 on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "select the branch name"
+        required: true 
+        default: "feature/ash"
+        type: string
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
   print-info:
