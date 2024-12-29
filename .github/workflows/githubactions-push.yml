@@ -9,7 +9,7 @@ on:
         required: true
       
         type: string
-  pull:
+  pull_request:
     branches: [main, hotfix-*]
 
 jobs:
