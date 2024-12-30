@@ -2,7 +2,7 @@ name: PR Opened Workflow
 
 on:
   pull_request:
-    types: [opened]
+    types: [synchronize]
     branches:
       - main
 
