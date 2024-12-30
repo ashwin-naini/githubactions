@@ -14,7 +14,7 @@ on:
 
 jobs:
   print-info:
-    # Define the operating system for the runner
+    # De-fine the operating system for the runner
     runs-on: ubuntu-latest
 
     steps:
