@@ -13,8 +13,8 @@ on:
     branches: [main, hotfix-*]
 
 jobs:
-  print-info:
-    # Define the operating system for the runner
-    Uses: ashwin-naini/githubactions/.github/workflows/pullrequest.yml@test
+  deploy-QA:
+    name: Deploy to QA
+    uses: ./.github/workflows/pullrequest.yml
 
     
