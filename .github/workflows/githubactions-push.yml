@@ -15,6 +15,6 @@ on:
 jobs:
   print-info:
     # Define the operating system for the runner
-    uses: ./.github/workflows/pullrequest.yml
+    Uses: ashwin-naini/githubactions/.github/workflows/pullrequest.yml@test
 
     
