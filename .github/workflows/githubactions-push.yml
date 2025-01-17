@@ -15,6 +15,6 @@ on:
 jobs:
   deploy-QA:
     name: Deploy to QA
-    uses: ashwin-naini/githubactions/.github/workflows/pullrequest.yml@refs/heads/test
+    uses: ashwin-naini/githubactions/.github/workflows/pullrequest.yml@test
 
     
