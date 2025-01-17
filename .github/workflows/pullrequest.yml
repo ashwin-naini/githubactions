@@ -1,10 +1,8 @@
 name: PR Opened Workflow
 
 on:
-  pull_request:
-    types: [opened, synchronize, closed, reopened]
-    branches:
-      - main
+  workflow_call
+  
 
 jobs:
   build:
