@@ -15,14 +15,6 @@ on:
 jobs:
   print-info:
     # Define the operating system for the runner
-    runs-on: ubuntu-latest
+    uses: ./.github/workflows/pull_requests.yml
 
-    steps:
-      - name: Print Push Information
-        run: |
-          # Print the branch name where the push occurred
-          echo "Branch Name: ${{ github.event.inputs.branch }}"
-          # Print the commit message of the last commit
-          echo "Commit Message: ${{ github.event.head_commit.message }}"
-          # printh the actor name
-          echo "github username: ${{github.actor}}"
+    
